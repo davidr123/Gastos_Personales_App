@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="stile.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    <!-- Modal -->
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="cerrar" style="display: none;">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ingresar Presupuesto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="form-control formodal">
+              <div class="mb-3">
+               <label>Ingrese Presupuesto</label>
+                <input type="text" placeholder="Ingresar Presupuesto" class="form-control" id="dinero">
+              </div>
+           
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" id="cerrar">Close</button>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </div>
+          </form>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+<!-- Termina Modal -->
+
+    
+        <header class="header">
+            <h1>Gastos Semanal</h1>
+         
+        </header>
+
+        <section class="contedor-general">
+            
+            <div class="contenedor-principal contenido primario">
+                <h2>Añade tus gastos</h2>
+              
+                <form class="form" id="agregar-gasto">
+                    <div class="form-group">
+                        <label for="gasto">Gasto</label>
+                        <input type="text" class="form-control" id="gasto" placeholder="Ingrese Gastos">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="text" class="form-control" id="cantidad" placeholder="Ingrese Cantidad">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btnagregar">Agregar</button>
+                </form>
+
+    
+
+            </div>
+
+
+            <div class="contenedor-secundario contenido">
+                <h2>Listado</h2>
+              
+                <div id="gastos" class="lista">
+                    <ul class="list-group"></ul>
+                </div>
+
+                <div id="presupuesto" class="presupuesto">
+                    <div class="alert alert-primary">
+                        <p>Presupuesto: $ <span id="total"></span> </p>
+                    </div>
+                    <div class="restante alert alert-success">
+                        <p>Restante: $ <span id="restante"></span></p>
+                    </div>
+                </div> <!--.presupuesto-->
+
+
+            </div>
+
+
+        </section>
+
+    
+
+  
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

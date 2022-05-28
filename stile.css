@@ -1,0 +1,127 @@
+
+
+body{
+    background-color: blueviolet;
+}
+
+.header{
+    text-align: center;
+    margin: 2rem 0;
+    color: blueviolet;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+.contedor-general{
+    width: 80%;
+  /* display: grid; */
+  display: flex;
+  justify-content: space-between;
+
+
+
+ background-color: white;
+ 
+   border-radius: 20px;
+   margin: 2rem auto;
+  
+
+}
+
+li span{
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    .contedor-general{
+        
+        flex-direction: column;
+
+    }
+}
+
+
+@media screen and (min-width:340px){
+    .fa{
+       font-size: 20px;
+       /* color: black; */
+    }
+}
+
+.form label{
+    color: blueviolet;
+    margin: .2rem;
+   
+}
+.form input{
+    padding: .5rem 0;
+    max-width: 100%;
+}
+
+.btnagregar{
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+.btnagregar:hover{
+    background-color: blueviolet;
+}
+
+.presupuesto p{
+    margin-bottom: 0;
+    font-weight: bold;
+   
+}
+.presupuesto p span {
+    font-weight: normal;
+
+}
+
+.contenido {
+    padding:20px 5rem;
+}
+
+.contenedor-principal{
+    /* display: flex;
+    flex-direction: column; */
+
+    width: 100%;
+    height: auto;
+
+  
+    
+}
+
+.lista{
+    margin: 1rem 0;
+    
+}
+
+
+.contenedor-secundario{
+    /* display: flex;
+    flex-direction: column; */
+
+    width: 100%;
+    height: auto;
+
+
+
+}
+
+.borrar-gasto{
+    border-radius: 1rem;
+}
+
+
+/* Modal */
+
+
+
+
